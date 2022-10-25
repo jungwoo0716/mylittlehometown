@@ -4,6 +4,7 @@
 }
 
 /* screen - DESKTOP */
+
 .desktop-screen {
   align-items: flex-start;
   background-color: var(--bizarre);
@@ -61,7 +62,7 @@
 }
 
 .desktop-screen .pdf-down-sign:hover {
-  transform: rotate(45deg);
+  transform: rotate(10deg);
 }
 
 .desktop-screen .open-sign {
@@ -73,7 +74,7 @@
   transition: all ease 1ms;
 }
 .desktop-screen .open-sign:hover {
-  transform: rotate(45deg);
+  transform: rotate(10deg);
 }
 
 .desktop-screen .stay-with-me-sign {
@@ -228,7 +229,7 @@
 }
 
 .mobile-screen .open-sign-mobile:hover {
-  transform: rotate(15deg);
+  transform: rotate(10deg);
 }
 
 .mobile-screen .stay-with-me-sign-mobile {
@@ -241,7 +242,7 @@
 }
 
 .mobile-screen .stay-with-me-sign-mobile:hover {
-  transform: rotate(15deg);
+  transform: rotate(10deg);
 }
 
 .mobile-screen .hometown-diary-sign-mobile {
@@ -254,7 +255,7 @@
 }
 
 .mobile-screen .hometown-diary-sign-mobile:hover {
-  transform: rotate(15deg);
+  transform: rotate(10deg);
 }
 
 @media screen and (max-width: 768px) {
