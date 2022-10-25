@@ -1,0 +1,270 @@
+.body {
+    margin: 0;
+    background-color: #ebdedb;
+}
+
+/* screen - DESKTOP */
+
+.desktop-screen {
+  align-items: flex-start;
+  background-color: var(--bizarre);
+  border: 1px none;
+  display: flex;
+  height: 1024px;
+  width: 1440px;
+}
+
+.desktop-screen .overlap-group {
+  height: 919px;
+  position: relative;
+  width: 1440px;
+}
+
+.desktop-screen .building {
+  height: 477px;
+  left: 286px;
+  position: absolute;
+  top: 442px;
+  width: 868px;
+}
+
+.desktop-screen .title {
+  height: 283px;
+  left: 358px;
+  position: absolute;
+  top: 0;
+  width: 723px;
+}
+
+.desktop-screen .tent {
+  height: 229px;
+  left: 357px;
+  position: absolute;
+  top: 273px;
+  width: 725px;
+}
+
+.desktop-screen .floor {
+  height: 89px;
+  left: 0;
+  position: absolute;
+  top: 830px;
+  width: 1440px;
+}
+
+.desktop-screen .pdf-down-sign {
+  height: 75px;
+  left: 946px;
+  position: absolute;
+  top: 649px;
+  width: 82px;
+  transition: all ease 1ms;
+}
+
+.desktop-screen .pdf-down-sign:hover {
+  transform: rotate(45deg);
+}
+
+.desktop-screen .open-sign {
+  height: 91px;
+  left: 677px;
+  position: absolute;
+  top: 539px;
+  width: 86px;
+  transition: all ease 1ms;
+}
+.desktop-screen .open-sign:hover {
+  transform: rotate(45deg);
+}
+
+.desktop-screen .stay-with-me-sign {
+  height: 132px;
+  left: 514px;
+  position: absolute;
+  top: 536px;
+  width: 77px;
+  transition: all ease 1ms;
+}
+
+.desktop-screen .stay-with-me-sign:hover {
+  transform: rotate(15deg);
+}
+
+.desktop-screen .hometown-diary-sign {
+  height: 84px;
+  left: 867px;
+  position: absolute;
+  top: 539px;
+  width: 90px;
+  transition: all ease 1ms;
+}
+
+.desktop-screen .hometown-diary-sign:hover {
+  transform: rotate(15deg);
+}
+
+.desktop-screen .sign {
+  height: 49px;
+  left: 402px;
+  position: absolute;
+  top: 39px;
+  width: 636px;
+}
+
+/* screen - MOBILE */
+  
+.mobile-screen {
+  align-items: center;
+  background-color: #eadedb;
+  border: 1px solid;
+  border-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  height: 640px;
+  padding: 28.0px 0;
+  width: 360px;
+}
+  
+.mobile-screen .sign-1 {
+  align-items: flex-start;
+  border: 1px none;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  margin-right: 0.69px;
+  min-width: 287px;
+  }
+  
+.mobile-screen .overlap-group-1 {
+  align-items: flex-start;
+  background-image: url(../img/sign-back-1@2x.svg);
+  background-size: 100% 100%;
+  display: flex;
+  gap: 40px;
+  height: 34px;
+  justify-content: flex-end;
+  margin-top: -1.0px;
+  min-width: 289px;
+  padding: 4.0px 14.4px;
+}
+
+.mobile-screen .surname {
+  color: #ffffff;
+  font-family: var(--font-family-noto_sans_kr);
+  font-size: var(--font-size-m);
+  font-weight: 900;
+  letter-spacing: -0.33px;
+  line-height: normal;
+  min-height: 22px;
+  min-width: 180px;
+  text-align: center;
+}
+
+.mobile-screen .vector {
+  align-self: center;
+  height: 4px;
+  margin-top: 0.37px;
+  width: 4px;
+}
+
+.mobile-screen .overlap-group1 {
+  height: 540px;
+  position: relative;
+  width: 360px;
+}
+
+.mobile-screen .building-mobile {
+  height: 314px;
+  left: 19px;
+  position: absolute;
+  top: 225px;
+  width: 322px;
+}
+
+.mobile-screen .title-mobile {
+  height: 114px;
+  left: 19px;
+  position: absolute;
+  top: 0;
+  width: 322px;
+}
+
+.mobile-screen .tent-mobile {
+  height: 149px;
+  left: 19px;
+  position: absolute;
+  top: 112px;
+  width: 322px;
+}
+
+.mobile-screen .floor-mobile {
+  height: 55px;
+  left: 0;
+  position: absolute;
+  top: 485px;
+  width: 360px;
+}
+
+.mobile-screen .pdf-down-sign-mobile {
+  height: 51px;
+  left: 253px;
+  position: absolute;
+  top: 373px;
+  width: 54px;
+  transition: all ease 1ms;
+}
+
+.mobile-screen .pdf-down-sign-mobile:hover {
+  transform: rotate(15deg);
+}
+
+.mobile-screen .open-sign-mobile {
+  height: 61px;
+  left: 153px;
+  position: absolute;
+  top: 290px;
+  width: 55px;
+  transition: all ease 1ms;
+}
+
+.mobile-screen .open-sign-mobile:hover {
+  transform: rotate(15deg);
+}
+
+.mobile-screen .stay-with-me-sign-mobile {
+  height: 89px;
+  left: 61px;
+  position: absolute;
+  top: 276px;
+  width: 49px;
+  transition: all ease 1ms;
+}
+
+.mobile-screen .stay-with-me-sign-mobile:hover {
+  transform: rotate(15deg);
+}
+
+.mobile-screen .hometown-diary-sign-mobile {
+  height: 56px;
+  left: 263px;
+  position: absolute;
+  top: 310px;
+  width: 58px;
+  transition: all ease 1ms;
+}
+
+.mobile-screen .hometown-diary-sign-mobile:hover {
+  transform: rotate(15deg);
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-screen { 
+    display: none;
+    }
+}
+@media screen and (min-width: 769px) {
+  .mobile-screen { 
+    display: none;
+    }
+}
