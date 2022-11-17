@@ -1,12 +1,3 @@
-.body{
-    background-color: #6A6A6A;
-}
-
-.container {
-    background-color: #6A6A6A;
-
-}
-
 .building {
     display: flex;
     justify-content: center;
@@ -15,21 +6,19 @@
 /* screen - DESKTOP */
 
 /* BUILDING BODY CSS */
+
 .rightBricks {
     background-color: #EBDEDB;
-    height: 842px;
+    
 }
 
 .leftBricks {
     background-color: #EBDEDB;
-    height: 842px;
 }
 
 .buildingBody{
-    background-color: #F071BB;
     position: relative;
     width: 715px;
-    height: 823px;
 }
 
 .rightWindows{
@@ -157,6 +146,11 @@
 .underBrick{
     display: flex;
     justify-content: center;
+    background-color: #6A6A6A;
+}
+.floor {
+    position: absolute;
+    top: 821px;
 }
 
 .pressSign {
@@ -174,17 +168,14 @@
 /* Footer CSS */
 
 .footer {
+    background-color: #2D2D2D;
     display: flex;
-    justify-self: center;
-    background-color: #2D2D2D;
-}
-
-.footer.floor{
-    background-color: #2D2D2D;
+    justify-content: center;
 }
 
 .footersample{
-    position: relative;
+    position: absolute;
+    top: 1024px;
 }
 
 /* screen - MOBILE */
