@@ -1,114 +1,190 @@
-.body {
-    margin: 0;
-    background-color: #ebdedb;
+.body{
+    background-color: #6A6A6A;
+}
+
+.container {
+    background-color: #6A6A6A;
+
+}
+
+.building {
+    display: flex;
+    justify-content: center;
 }
 
 /* screen - DESKTOP */
 
-.desktop-screen {
-  align-items: flex-start;
-  background-color: var(--bizarre);
-  border: 1px none;
-  display: flex;
-  height: 1024px;
-  width: 1440px;
+/* BUILDING BODY CSS */
+.rightBricks {
+    background-color: #EBDEDB;
+
 }
 
-.desktop-screen .overlap-group {
-  height: 919px;
-  position: relative;
-  width: 1440px;
+.leftBricks {
+    background-color: #EBDEDB;
+
 }
 
-.desktop-screen .building {
-  height: 477px;
-  left: 286px;
-  position: absolute;
-  top: 442px;
-  width: 868px;
+.buildingBody{
+    background-color: #F071BB;
+    position: relative;
+    width: 715px;
+    height: 823px;
 }
 
-.desktop-screen .title {
-  height: 283px;
-  left: 358px;
-  position: absolute;
-  top: 0;
-  width: 723px;
+.rightWindows{
+    position: absolute;
+    top: 447px;
+    left: 219px;
+    
 }
 
-.desktop-screen .tent {
-  height: 229px;
-  left: 357px;
-  position: absolute;
-  top: 273px;
-  width: 725px;
+.door {
+    position: absolute;
+    top: 446px;
+    left: 24px;
 }
 
-.desktop-screen .floor {
-  height: 89px;
-  left: 0;
-  position: absolute;
-  top: 830px;
-  width: 1440px;
+.tent {
+    position: absolute;
+    top: 235px;
 }
 
-.desktop-screen .pdf-down-sign {
-  height: 75px;
-  left: 946px;
-  position: absolute;
-  top: 649px;
-  width: 82px;
-  transition: all ease 1ms;
+.title {
+    position: absolute;
+    top: 97px;
 }
 
-.desktop-screen .pdf-down-sign:hover {
-  transform: rotate(10deg);
+.signback {
+    position: absolute;
+    top: 30px;
+    left: 21px;
+    width: 674px;
+    height: 47px;
+    background: #535BB4;
+    border: 2px solid #1D1D1B;
+    border-radius: 30px;
+    display: flex;
+      flex: 0 0 auto;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: 0.3s;
+      font-size: 2.5rem;
+      font-weight:bold;
+      color: #9D9993;
 }
 
-.desktop-screen .open-sign {
-  height: 91px;
-  left: 677px;
-  position: absolute;
-  top: 539px;
-  width: 86px;
-  transition: all ease 1ms;
-}
-.desktop-screen .open-sign:hover {
-  transform: rotate(10deg);
-}
-
-.desktop-screen .stay-with-me-sign {
-  height: 132px;
-  left: 514px;
-  position: absolute;
-  top: 536px;
-  width: 77px;
-  transition: all ease 1ms;
+.signText {
+    margin: 0px;
+    text-align: center;
+    line-height: 47px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Noto Sans KR;
+    letter-spacing: -0.33px;
+    animation: textLoop 10s linear infinite;
 }
 
-.desktop-screen .stay-with-me-sign:hover {
-  transform: rotate(15deg);
+.circle {
+    margin: 5px;
+    line-height: 47px;
 }
 
-.desktop-screen .hometown-diary-sign {
-  height: 84px;
-  left: 867px;
-  position: absolute;
-  top: 539px;
-  width: 90px;
-  transition: all ease 1ms;
+@keyframes textLoop {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+.game-sign {
+    position: absolute;
+    top: 476px;
+    left: 365px;
 }
 
-.desktop-screen .hometown-diary-sign:hover {
-  transform: rotate(15deg);
+.staywithme-sign {
+    position: absolute;
+    top: 470px;
+    left: 243px;
 }
 
-.desktop-screen .sign {
-  height: 49px;
-  left: 402px;
-  position: absolute;
-  top: 39px;
-  width: 636px;
+.pdf-sign {
+    position: absolute;
+    top: 476px;
+    left: 564px;
+}
+
+.shop-sign {
+    position: absolute;
+    top: 593px;
+    left: 456px;
+}
+
+.open-sign {
+    position: absolute;
+    top: 510px;
+    left: 72px;
+}
+
+/* Light Blink Effect */
+
+.light-green {
+    position: absolute;
+    top: 264px;
+    animation: blink-effect 0.5s step-start infinite;   
+}
+
+.light-red {
+    position: absolute;
+    top: 264px;
+    animation: blink-effect 0.5s step-end infinite;   
+}
+
+@keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+}
+
+
+    /* FLOOR CSS */
+.underBrick{
+    display: flex;
+    justify-content: center;
+}
+
+.pressSign {
+    position: absolute;
+    top: 898px;
+    justify-content: center;
+}
+
+.buttonText {
+    position: absolute;
+    top: 948px;
+    justify-content: center;
+}
+
+/* Footer CSS */
+
+.footer {
+    display: flex;
+    justify-self: center;
+    background-color: #2D2D2D;
+}
+
+.footer.floor{
+    background-color: #2D2D2D;
+}
+
+.footersample{
+    position: relative;
 }
 
 /* screen - MOBILE */
