@@ -70,7 +70,7 @@
     color: #FFFFFF;
     font-size: 20px;
     font-weight: bold;
-    font-family: Noto Sans KR;
+    font-family: "Noto Sans KR", sans-serif;
     letter-spacing: -0.33px;
     animation: textLoop 10s linear infinite;
 }
@@ -165,173 +165,223 @@
     justify-content: center;
 }
 
+/* PDFDOWNLOAD CSS */
+.pdf-container {
+    background-color: #F071BB;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pdfsign {
+    margin-top: 118px;
+}
+
+@keyframes shadow-effect {
+    50% {
+      opacity: 0%;
+    }
+}
+
+.pdfsignOff{
+    position: absolute;
+    z-index: 1;
+    margin-top: 10px;
+    margin-left: -52px;
+    animation: shadow-effect 1s step-start infinite;
+}
+
+.pdfboard {
+    margin-top: 37px;
+    
+}
+
+.downloadButton {
+    color: #FFFFFF;
+    background-color: #2DBC4B;
+    font-size: 2rem;
+    margin-top: 47px;
+    padding: 0.5rem 2rem;
+  
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: 2px solid;
+  
+    display: inline-block;
+    width: auto;
+  
+    border: 2.5px solid;
+    border-color: #000;
+    border-radius: 1.5rem;
+
+}
+
+.publicNotice {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 27px;
+}
+
 /* Footer CSS */
 
 .footer {
     background-color: #2D2D2D;
-    display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 .footersample{
+    width: 100%;
+}
+
+/* screen - Mobile */
+
+.mobile-building {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBDEDB;
+}
+
+.mobile-tent {
     position: absolute;
-    top: 1024px;
+    top: 200px;
 }
 
-/* screen - MOBILE */
-  
-.mobile-screen {
-  align-items: center;
-  background-color: #eadedb;
-  border: 1px solid;
-  border-color: transparent;
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-  height: 640px;
-  padding: 28.0px 0;
-  width: 360px;
-}
-  
-.mobile-screen .sign-1 {
-  align-items: flex-start;
-  border: 1px none;
-  display: flex;
-  height: 32px;
-  justify-content: center;
-  margin-right: 0.69px;
-  min-width: 287px;
-  }
-  
-.mobile-screen .overlap-group-1 {
-  align-items: flex-start;
-  background-image: url(../img/sign-back-1@2x.svg);
-  background-size: 100% 100%;
-  display: flex;
-  gap: 40px;
-  height: 34px;
-  justify-content: flex-end;
-  margin-top: -1.0px;
-  min-width: 289px;
-  padding: 4.0px 14.4px;
+.mobile-title {
+    position: absolute;
+    top: 90px;
 }
 
-.mobile-screen .surname {
-  color: #ffffff;
-  font-family: var(--font-family-noto_sans_kr);
-  font-size: var(--font-size-m);
-  font-weight: 900;
-  letter-spacing: -0.33px;
-  line-height: normal;
-  min-height: 22px;
-  min-width: 180px;
-  text-align: center;
+.mobile-signback {
+    position: absolute;
+    top: 47px;
+    width: 327px;
+    height: 35px;
+    background: #535BB4;
+    border: 2px solid #1D1D1B;
+    border-radius: 30px;
+    display: flex;
+      flex: 0 0 auto;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: 0.3s;
+      font-size: 2.5rem;
+      font-weight:bold;
+      color: #9D9993;
 }
 
-.mobile-screen .vector {
-  align-self: center;
-  height: 4px;
-  margin-top: 0.37px;
-  width: 4px;
+.mobile-signText {
+    margin: 4px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -0.33px;
+    animation: textLoop 10s linear infinite;
 }
 
-.mobile-screen .overlap-group1 {
-  height: 540px;
-  position: relative;
-  width: 360px;
+.mobile-circle {
+    margin: 0px;
 }
 
-.mobile-screen .building-mobile {
-  height: 314px;
-  left: 19px;
-  position: absolute;
-  top: 225px;
-  width: 322px;
+.mobile-gamesign {
+    position: absolute;
+    top: 330px;
+    margin-left: 100px;
 }
 
-.mobile-screen .title-mobile {
-  height: 114px;
-  left: 19px;
-  position: absolute;
-  top: 0;
-  width: 322px;
+.mobile-staywithme {
+    position: absolute;
+    top: 327px;
+    margin-left: 1rem;
 }
 
-.mobile-screen .tent-mobile {
-  height: 149px;
-  left: 19px;
-  position: absolute;
-  top: 112px;
-  width: 322px;
+.mobile-pdfsign {
+    position: absolute;
+    top: 440px;
+    margin-left: 110px;
+
 }
 
-.mobile-screen .floor-mobile {
-  height: 55px;
-  left: 0;
-  position: absolute;
-  top: 485px;
-  width: 360px;
+.mobile-shopsign {
+    position: absolute;
+    top: 440px;
+    margin-left: 1.5rem;
 }
 
-.mobile-screen .pdf-down-sign-mobile {
-  height: 51px;
-  left: 253px;
-  position: absolute;
-  top: 373px;
-  width: 54px;
-  transition: all ease 1ms;
+.mobile-opensign {
+    position: absolute;
+    top: 377px;
+    margin-left: -6rem;
+}
+.mobile-underbrick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EBDEDB;
 }
 
-.mobile-screen .pdf-down-sign-mobile:hover {
-  transform: rotate(15deg);
+.mobile-floor {
+    position: inherit;
+    margin-top: -2px;
+    
 }
 
-.mobile-screen .open-sign-mobile {
-  height: 61px;
-  left: 153px;
-  position: absolute;
-  top: 290px;
-  width: 55px;
-  transition: all ease 1ms;
+.mobile-signtext {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    margin-top: 3rem;
 }
 
-.mobile-screen .open-sign-mobile:hover {
-  transform: rotate(10deg);
+.mobile-notice {
+    margin-top: 0.5rem;
+
 }
 
-.mobile-screen .stay-with-me-sign-mobile {
-  height: 89px;
-  left: 61px;
-  position: absolute;
-  top: 276px;
-  width: 49px;
-  transition: all ease 1ms;
+.mobile-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    background-color: #2D2D2D;
 }
 
-.mobile-screen .stay-with-me-sign-mobile:hover {
-  transform: rotate(10deg);
+.mobile-footer-logo {
+    flex: 1 1 auto;
+
 }
 
-.mobile-screen .hometown-diary-sign-mobile {
-  height: 56px;
-  left: 263px;
-  position: absolute;
-  top: 310px;
-  width: 58px;
-  transition: all ease 1ms;
+.mobile-footer-sns {
+    color: #EBDEDB;
+
 }
 
-.mobile-screen .hometown-diary-sign-mobile:hover {
-  transform: rotate(10deg);
+.mobile-footer-sns .p{
+    color: #EBDEDB;
+
 }
+
 
 @media screen and (max-width: 768px) {
-  .desktop-screen { 
-    display: none;
+    .container { 
+      display: none;
+      }
+    .footersample {
+        display: none;
     }
-}
-@media screen and (min-width: 769px) {
-  .mobile-screen { 
-    display: none;
-    }
-}
+  }
+  @media screen and (min-width: 769px) {
+    .mobile-container { 
+      display: none;
+      }
+  }
