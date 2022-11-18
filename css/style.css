@@ -178,7 +178,6 @@
 .pdf-container {
     background-color: #F071BB;
     width: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,6 +185,8 @@
 
 .pdfsign {
     margin-top: 118px;
+    max-width: 40%;
+    height: auto;
 }
 
 @keyframes shadow-effect {
@@ -197,6 +198,7 @@
 .pdfsignOff{
     position: absolute;
     z-index: 1;
+    max-width: 40%;
     margin-top: 10px;
     margin-left: -52px;
     animation: shadow-effect 1s step-start infinite;
@@ -204,6 +206,8 @@
 
 .pdfboard {
     margin-top: 37px;
+    max-width: 80%;
+    height: auto;
     
 }
 
@@ -235,6 +239,7 @@
     font-weight: 400;
     color: #FFFFFF;
     margin-top: 27px;
+    max-width: 60%;
 }
 
 /* Footer CSS */
