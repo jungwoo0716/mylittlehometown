@@ -241,26 +241,24 @@
 
 /* screen - Mobile */
 
-.mobile-building {
+.mobile-container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #EBDEDB;
 }
 
-.mobile-tent {
-    position: absolute;
-    top: 200px;
-}
-
-.mobile-title {
-    position: absolute;
-    top: 90px;
+.mobile-buildingbody {
+    position: relative;
+    width: 350px;
 }
 
 .mobile-signback {
     position: absolute;
     top: 47px;
+    left: 12px;
     width: 327px;
     height: 35px;
     background: #535BB4;
@@ -277,7 +275,7 @@
 }
 
 .mobile-signText {
-    margin: 4px;
+    margin: auto;
     text-align: center;
     color: #FFFFFF;
     font-size: 1rem;
@@ -288,40 +286,65 @@
 }
 
 .mobile-circle {
-    margin: 0px;
+    margin: auto;
 }
 
-.mobile-gamesign {
+.mobile-tent {
     position: absolute;
-    top: 330px;
-    margin-left: 100px;
+    top: 200px;
 }
 
-.mobile-staywithme {
+.mobile-title {
     position: absolute;
-    top: 327px;
-    margin-left: 1rem;
+    top: 90px;
+    left: 10px;
 }
 
-.mobile-pdfsign {
+.mobile-light-green {
     position: absolute;
-    top: 440px;
-    margin-left: 110px;
-
+    top: 200px;
+    animation: blink-effect 0.5s step-start infinite;   
 }
 
-.mobile-shopsign {
+.mobile-light-red {
     position: absolute;
-    top: 440px;
-    margin-left: 1.5rem;
+    top: 200px;
+    animation: blink-effect 0.5s step-end infinite;   
 }
 
 .mobile-opensign {
     position: absolute;
     top: 377px;
-    margin-left: -6rem;
+    left: 49px;
 }
+
+.mobile-staywithme {
+    position: absolute;
+    left: 160px;
+    top: 327px;
+}
+
+.mobile-gamesign {
+    position: absolute;
+    left: 223px;
+    top: 330px;
+}
+
+.mobile-shopsign {
+    position: absolute;
+    left: 159px;
+    top: 440px;
+}
+
+.mobile-pdfsign {
+    position: absolute;
+    left: 250px;
+    top: 440px;
+    
+}
+
 .mobile-underbrick {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
