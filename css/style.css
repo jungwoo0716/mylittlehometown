@@ -374,12 +374,24 @@
 
 @media screen and (max-width: 768px) {
     .container { 
-      display: none;
+        display: none;
+    }
+    .building {
+        display: none;
+    }
+    .underBrick {
+        display: none;
+    }
+    .footer {
+        display: none;
     }
 }
 
 @media screen and (min-width: 769px) {
     .mobile-container { 
-      display: none;
+        display: none;
+    }
+    .mobile-building {
+        display: none;
     }
 }
