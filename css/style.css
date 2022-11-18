@@ -375,13 +375,11 @@
 @media screen and (max-width: 768px) {
     .container { 
       display: none;
-      }
-    .footersample {
-        display: none;
     }
-  }
-  @media screen and (min-width: 769px) {
+}
+
+@media screen and (min-width: 769px) {
     .mobile-container { 
       display: none;
-      }
-  }
+    }
+}
