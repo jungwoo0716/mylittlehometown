@@ -253,6 +253,7 @@
 .mobile-buildingbody {
     position: relative;
     width: 350px;
+    height: 675px;
 }
 
 .mobile-signback {
@@ -340,7 +341,6 @@
     position: absolute;
     left: 250px;
     top: 440px;
-    
 }
 
 .mobile-underbrick {
@@ -353,12 +353,12 @@
 }
 
 .mobile-floor {
-    position: inherit;
-    margin-top: -2px;
+    position: absolute;
     
 }
 
 .mobile-signtext {
+    position: absolute;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -389,9 +389,12 @@
 
 }
 
-.mobile-footer-sns .p{
-    color: #EBDEDB;
-
+#footerSns {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 
